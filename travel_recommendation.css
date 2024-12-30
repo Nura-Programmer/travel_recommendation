@@ -1,0 +1,106 @@
+/* Reset default styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #eee;
+}
+
+/* Header (branding, ul and searh-panel */
+header {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #061b18, #136e5f);
+}
+
+/* Logo and name (h1) */
+header #branding {
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 30px;
+    font-style: italic;
+}
+
+/* SVG logo */
+#logo {
+    width: 50px;
+    margin-right: 10px;
+    transform: rotate(20deg);
+    overflow: visible !important;
+    fill: #eee;
+}
+
+/* Navs (ul>li>a) */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header a {
+    margin-right: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #eee;
+    color: #136e5f;
+    border-radius: 10px;
+}
+
+/* 
+search-panel > s
+    #search-input, #searh-icon (sVG), #search-btn, #clear-btn
+*/
+header #search-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+header #search-input {
+    border: none;
+    outline: none;
+    width: 250px;
+    padding: 12px;
+    font-size: 16px;
+    color: #136e5f;
+}
+
+header #search-icon {
+    width: 25px;
+    height: 39px;
+}
+
+header #search-btn, #clear-btn {
+    width: 80px;
+    padding: 12px;
+    margin-left: 20px;
+    border-radius: 8px;
+    background-color: #136e5f;
+    border: none;
+}
+
+#branding, #search-icon:hover, #search-btn:hover, #clear-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
