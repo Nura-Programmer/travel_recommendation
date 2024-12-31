@@ -242,3 +242,58 @@ section h3 {
     border: none;
     min-width: 80px;
 }
+
+#contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 85vh;
+}
+
+#contact h2 {
+    margin-bottom: 40px;
+}
+
+form {
+    background-color: rgba(6, 27, 24, 0.5);
+    width: 50%;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+}
+
+form * {
+    margin: 5px 10px;
+}
+
+form input, form textarea {
+    height: 40px;
+    font-size: 16px;
+    padding: 5px;
+    background: none;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+form textarea {
+    height: 150px;
+}
+
+form input[type=submit] {
+    width: 93%;
+    align-self: center;
+    background-color: #061b18;
+    border: none;
+}
+
+form input[type=submit]:hover {
+    color: #061b18;
+    background-color: #eee;
+    border-color: #eee;
+    cursor: pointer;
+}
