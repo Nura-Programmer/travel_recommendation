@@ -29,7 +29,7 @@ header h1 {
 
 /* SVG logo */
 #logo {
-    width: 50px;
+    width: 30px;
     margin-right: 10px;
     transform: rotate(20deg);
     overflow: visible !important;
