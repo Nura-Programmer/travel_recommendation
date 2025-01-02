@@ -8,6 +8,7 @@
 }
 
 body {
+    position: relative;
     background: linear-gradient(to right, rgba(6, 27, 24, 0.8), rgb(19, 110, 95, 0.2)), url("beach.jpg") no-repeat center fixed;
     background-size: cover;
 }
@@ -108,7 +109,8 @@ header #search-btn, #clear-btn, #booking-btn{
 }
 
 #branding, #search-icon:hover, #search-btn:hover, 
-#clear-btn:hover, #booking-btn:hover, .profil-btn:hover {
+#clear-btn:hover, #booking-btn:hover, .profil-btn:hover,
+.result-description button:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
@@ -296,4 +298,54 @@ form input[type=submit]:hover {
     background-color: #eee;
     border-color: #eee;
     cursor: pointer;
+}
+
+#result-panel {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 450px;
+}
+
+#error-panel {
+    min-height: 30px;
+    background-color: rgba(19, 110, 95, 0.8);
+    padding: 5px 10px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+#result-panel img {
+    width: 100%;
+}
+
+.results {
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 15px 0;
+    background:rgba(238, 238, 238, 0.8);
+}
+
+.result-description {
+    padding: 10px;
+}
+
+.result-description * {
+    color: #061b18;
+    margin: 5px 0;
+}
+
+.result-description h3 {
+    font-size: 20px;
+}
+
+.result-description button {
+    width: 80px;
+    padding: 8px;
+    border: none;
+    background-color: #136e5f;
+    color: #eee;
+    border-radius: 4px;
 }
