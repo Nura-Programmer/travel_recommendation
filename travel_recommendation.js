@@ -1,5 +1,19 @@
+document.forms["contact-form"].onsubmit = function (e) {
+  e.preventDefault();
+
+  const { 0: nameInput, 1: emailInput } = e.target;
+
+  e.target.reset(); // Clear the form fields
+
+  // Notify user the message was sent
+  alert(
+    `Thank you, ${nameInput.value}.\nYour message was successfully being sent.
+    \nYou will get a response through your email "${emailInput.value}"`
+  );
+};
+
 // Reset search input to empty string
-document.getElementById("clear-btn").addEventListener("click", clearSearch);
+document.getElementById("clear-btn")?.addEventListener("click", clearSearch);
 function clearSearch() {
   document.getElementById("search-input").value = "";
   resetSearchPanel();
